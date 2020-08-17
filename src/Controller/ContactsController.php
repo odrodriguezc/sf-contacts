@@ -16,8 +16,11 @@ class ContactsController extends AbstractController
      */
     public function index(ContactRepository $contactEntityRepository)
     {
+        $user = $this->getUser();
+
         return $this->render('contacts/index.html.twig', [
-            'contacts' => $contactEntityRepository->findAll(),
+            //filtering user by owner (user)
+            'contacts' => $contactEntityRepository->findBy(['user' => $user]),
         ]);
     }
 }
