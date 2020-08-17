@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New directory{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+            <h1 class="mt-3 mb-3" >New directory/user</h1>
+        {{ form_start(formDirectory) }}
+
+        {{ form_widget(formDirectory) }}
+
+        <button class="btn btn-success"> Save </button>
+
+         {{ form_end(formDirectory) }}
+    </div>
+
+
+{% endblock %}

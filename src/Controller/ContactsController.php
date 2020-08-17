@@ -88,7 +88,7 @@ class ContactsController extends AbstractController
     }
 
     /**
-     * @Route("/directory/{id<\d+>}/delete", name="directory_delete")
+     * @Route("/contact/{id<\d+>}/delete", name="contact_delete")
      */
     public function delete(Contact $contact, EntityManagerInterface $em)
     {

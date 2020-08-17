@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Show Contact{% endblock %}
+
+{% block body %}
+    <div class="container mt-5 mb-3">
+        <div class="card border-dark mb-3">
+            <div class="card-header"> Contact </div>
+            <div class="card-body">
+                <h4 class="card-title">{{contact.fullName}} </h4>
+                <p class="card-text">Phone: {{ contact.phone }}</p>
+                <p class="card-text">Email: {{ contact.email }}</p>
+                <p class="card-text">Address: {{ contact.address }}</p>
+            </div>
+        </div>
+        <a href=" {{path('contact_edit', {'id': contact.id})}} " class="btn btn-warning">Edit</a>
+        <a href=" {{path('contact_delete', {'id': contact.id})}} " class="btn btn-danger">Delete</a>
+    </div>
+
+{% endblock %}
