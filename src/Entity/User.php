@@ -38,7 +38,7 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=ContactEntity::class, mappedBy="user", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=Contact::class, mappedBy="user", orphanRemoval=true)
      */
     private $contacts;
 
@@ -126,14 +126,14 @@ class User implements UserInterface
     }
 
     /**
-     * @return Collection|ContactEntity[]
+     * @return Collection|Contact[]
      */
     public function getContacts(): Collection
     {
         return $this->contacts;
     }
 
-    public function addContact(ContactEntity $contact): self
+    public function addContact(Contact $contact): self
     {
         if (!$this->contacts->contains($contact)) {
             $this->contacts[] = $contact;
@@ -143,7 +143,7 @@ class User implements UserInterface
         return $this;
     }
 
-    public function removeContact(ContactEntity $contact): self
+    public function removeContact(Contact $contact): self
     {
         if ($this->contacts->contains($contact)) {
             $this->contacts->removeElement($contact);

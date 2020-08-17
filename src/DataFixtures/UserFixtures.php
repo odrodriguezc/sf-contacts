@@ -2,15 +2,10 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Task;
+
 use App\Entity\User;
-use App\Entity\Event;
-use App\Entity\Project;
-use App\Entity\Customer;
-use App\Entity\Participation;
 use App\DataFixtures\AbstractFixtures;
-use App\Entity\ContactEntity;
-use DateTime;
+use App\Entity\Contact;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
@@ -37,7 +32,7 @@ class UserFixtures extends AbstractFixtures
 
             //Create 10 contacts by user
             for ($x = 0; $x < 10; $x++) {
-                $contact = new ContactEntity();
+                $contact = new Contact();
                 $contact
                     ->setFirstName($this->faker->firstName())
                     ->setLastName($this->faker->lastName())
