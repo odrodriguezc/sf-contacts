@@ -5,12 +5,18 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\ContactRepository;
 use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=ContactRepository::class)
  * @ORM\HasLifecycleCallbacks()
- * @ApiResource()
- * @todo serialization groups and security control
+ * @ApiResource( 
+ *      attributes={
+ *          "normalization_context"={"groups"={"contact:read"}},
+ *          "denormalization_context"={"groups"={"contact:write"}}
+ *      }
+ * )
+ * @todo security control
  */
 class Contact
 {
@@ -18,37 +24,44 @@ class Contact
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"contact:read", "contact:write"})
      * 
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"contact:read", "contact:write"})
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"contact:read", "contact:write"})
      */
     private $lastName;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"contact:read", "contact:write"})
      */
     private $phone;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"contact:read", "contact:write"})
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"contact:read", "contact:write"})
      */
     private $address;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups({"contact:read"})
      */
     private $createdAt;
 

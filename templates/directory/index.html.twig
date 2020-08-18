@@ -17,7 +17,7 @@
             <thead>
                 <tr>
                     <th>No. </th>
-                    <th>Email</th>
+                    <th>Name</th>
                     <th>Role</th>
                     <th></th>
                 </tr>
@@ -27,7 +27,7 @@
                 
                 <tr class="table-primary" >
                     <td> {{ u.id }} </td>
-                    <td> <a href= "{{ path('directory_show', {'id': u.id})}}">{{ u.email }}</a> </td>
+                    <td> <a href= "{{ path('directory_show', {'id': u.id})}}">{{ u.fullName }}</a> </td>
                     <td> {{ u.roles | join(',') }} </td>
                     <td>
                         <a href="{{ path('directory_edit', {'id': u.id}) }}">

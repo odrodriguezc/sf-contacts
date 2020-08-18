@@ -5,7 +5,6 @@ security:
     App\Entity\User:
       algorithm: auto
 
-
   providers:
     # used to reload user from session & other features (e.g. switch_user)
     app_user_provider:
@@ -57,9 +56,8 @@ security:
   access_control:
     - { path: ^/api/login_token, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/api$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-    - { path: ^/api, roles: ROLE_USER }
+    - { path: ^/api, roles: [ROLE_ADMIN, ROLE_USER] }
     - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-    - { path: ^/admin, roles: ROLE_ADMIN }
+    - { path: ^/admin, roles: [ROLE_ADMIN] }
     # - { path: ^/admin, roles: ROLE_ADMIN }
     # - { path: ^/profile, roles: ROLE_USER }
-

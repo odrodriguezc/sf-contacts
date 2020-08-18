@@ -27,6 +27,9 @@ class UserFixtures extends AbstractFixtures
             $role = $u === 0 ? 'ROLE_ADMIN' : 'ROLE_USER';
             $user
                 ->setEmail("user{$u}@exemple.fr")
+                ->setFirstName($this->faker->firstName())
+                ->setLastName($this->faker->lastName())
+                ->setVisibility($this->faker->boolean())
                 ->setPassword($this->encoder->encodePassword($user, '12345'))
                 ->setRoles([$role]);
 

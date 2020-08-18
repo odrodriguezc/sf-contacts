@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Back control
+{% endblock %}
+
+{% block body %}
+
+	<div class="container mt-5">
+		<div class="jumbotron">
+			<h1 class="display-3">Hello,
+				<strong>
+					{{ user.fullName }}
+				</strong>
+			</h1>
+			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+			<hr class="my-4">
+			<form id="quick-search">
+				<div class="form-group">
+					<label for="search">Quick search
+					</label>
+					<input class="form-control" type="search-str" name="search-str" id="search-str" placeholder="Search by phone or name">
+				</div>
+				{# <button class="btn btn-success mt-2 mb-2" type="submit">Search</button> #}
+			</form>
+		</div>
+	</div>
+
+	<section id="contacts">
+		<table id="" class="table table-hover">
+			<thead>
+				<tr>
+					<th>Fullname</th>
+					<th>Phone</th>
+					<th>Address</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="table-target"></tbody>
+		</table>
+	</section>
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+	<script src="{{ asset('js/quick-search.js') }}"></script>
+
+{% endblock %}
