@@ -42,25 +42,24 @@ function displayContacts(json) {
   let target = document.querySelector("#table-target");
 
   target.innerHTML = "";
-
   json.forEach((element, index) => {
     target.insertAdjacentHTML(
       "beforeend",
       `<tr class="table-primary">
-    <td>
-      <a href="/admin/contact/${element.id}"> ${element.firstName} ${element.lastName} </a>
-    </td>
-    <td> ${element.phone} </td>
-    <td> ${element.email} </td>
-    <td>
-      <a href="/admin/contact/${element.id}/edit">
+        <td>
+        <a href="/admin/contact/${element.id}"> ${element.firstName} ${element.lastName} </a>
+        </td>
+        <td> ${element.phone} </td>
+        <td> ${element.email} </td>
+        <td>
+        <a href="/admin/contact/${element.id}/edit">
         <i class="fa fa-edit"></i>
-      </a>
-      <a href="/admin/contact/${element.id}/delete">
+        </a>
+        <a href="/admin/contact/${element.id}/delete">
         <i class="fa fa-trash"></i>
-      </a>
-    </td>
-  </tr>`
+        </a>
+        </td>
+        </tr>`
     );
   });
 }

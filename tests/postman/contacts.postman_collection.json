@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "169ed232-36c5-42df-a4f0-a1f8546475de",
+		"name": "contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "token_login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NTUyNDUsImV4cCI6MTU5Nzc1ODg0NSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.kG9HXpU-dH3aFb5QKnK-Jq8p1P1rQqR2aoD4-48kTEmjnuqjAN17XTP6SBiIQvM3kKxCnsocZebX5PnwibR0dzdZ2ScXvEP8FhwAjvSyWop9WPV3p5ldovbDCVF0OeuYrrCPhW7vTnHexL_SvtxT36bc9mEczj1rKX0Y1Z_2ZMH0_v-C4uIU2jTR01ihjegbV8yqLsIJYJBtTnIXJH7Mqu1pboGbGsDLcHR3Mrj6TqssMCJOXRKe_-fpMoe6QEEoMB0huKgfhNCQPSJ3hqCqgHoLShbR9i3AnRE-4N7KDL1VwiFa6XnVrWL7S5tf2tjbVzndtBeX8poaIFOYkUSYbPYGnXIseZV4sKu0LPZb9c1oPFYr48LglBzzp2kvjzeh5DzoJvcoCLQIZjcecknrgfcBPMVr4D3nVZYJQ_boHjFOzrMiTnVwkzdKGFbTo7ZZxtCfbladZZ532882J0N3wMONoUhHukb6ObcfZNHr0ZgfavjZJxsf2zgfiqh1MrhdmhlL4unrBJJRGNPJtXYTtQPoi2cWOeJNN1PMQjXzfxYiOVvnhycz3kWfOieLlf4qgG9gotEW8w6ZyL97IaJ4jZLYInEQqouKZDUpDsDQo64LbwC6mvvCL7BmRN4g0Zzb8W3i7v5an7S2cVp7GDwuGv4gBdyxtUzEPG671wliTtE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contacts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ITEM",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NTc4ODYsImV4cCI6MTU5Nzc2MTQ4Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.UnXNgen-FcsQMNkNK5EOhSTjn17yjMaoJJItgNp9wwr1wRAooO9V2P9uFRo8UBunS3NEkNJRHmgWq-pvV34GJ9nv5CH_9eCo5LWUdprDXt-Jb86TBpFoRSriui03XO8IgZQSJI2w5li1yWxdVFQ7OB_uG7Xav86Sb6MMl1oCl8ccoD00tKUTcEZNVa5bMEgV2IZL1IWO-jkw1d5ag-efibAMoGSDyKXCIn_DGZ3ljUs17NNTKFQHlA1YgIfYHE-AycWYbvuFLXFZxV68FdyBN2-4TR-E0Ct9KnwsoK8m27JFVXtr4tU673jlfJfeuDEbqy645a9kAd4R-EDmLflVPcc9YOWkdcWc2p8fqH5fYO-8liTJ6n2q3KldpcbZkNCIkvaePNpyCIiLn7hvQI4RbUjisK0dNHuxz1MhF2QTJWrS7gG30mSNlKUgQimTvH-VZTqZCs75j4isCypwqgF2vOExPLmHXTHL36rWPBUMpbb7y8XIwyRjBnL51XgAyVrwB8CX9eil1PWgwFBGP4hEB8NNNQE4f5gyLp3wp8LxW4CoGaqgyO-46M_Ik39VygP3OZAXcB3Z9A_-mKnNp8HNnDlgsUPFAzU7yS1tKJYASkqev3d5_BWozkmeA8kY2x0Sel4MM6OykDvQIUdIXkMPikBEreO64OryHSXut1WUdOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NTc4ODYsImV4cCI6MTU5Nzc2MTQ4Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.UnXNgen-FcsQMNkNK5EOhSTjn17yjMaoJJItgNp9wwr1wRAooO9V2P9uFRo8UBunS3NEkNJRHmgWq-pvV34GJ9nv5CH_9eCo5LWUdprDXt-Jb86TBpFoRSriui03XO8IgZQSJI2w5li1yWxdVFQ7OB_uG7Xav86Sb6MMl1oCl8ccoD00tKUTcEZNVa5bMEgV2IZL1IWO-jkw1d5ag-efibAMoGSDyKXCIn_DGZ3ljUs17NNTKFQHlA1YgIfYHE-AycWYbvuFLXFZxV68FdyBN2-4TR-E0Ct9KnwsoK8m27JFVXtr4tU673jlfJfeuDEbqy645a9kAd4R-EDmLflVPcc9YOWkdcWc2p8fqH5fYO-8liTJ6n2q3KldpcbZkNCIkvaePNpyCIiLn7hvQI4RbUjisK0dNHuxz1MhF2QTJWrS7gG30mSNlKUgQimTvH-VZTqZCs75j4isCypwqgF2vOExPLmHXTHL36rWPBUMpbb7y8XIwyRjBnL51XgAyVrwB8CX9eil1PWgwFBGP4hEB8NNNQE4f5gyLp3wp8LxW4CoGaqgyO-46M_Ik39VygP3OZAXcB3Z9A_-mKnNp8HNnDlgsUPFAzU7yS1tKJYASkqev3d5_BWozkmeA8kY2x0Sel4MM6OykDvQIUdIXkMPikBEreO64OryHSXut1WUdOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Test\",\r\n  \"lastName\": \"Osterone\",\r\n  \"phone\": \"12345678910\",\r\n  \"email\": \"email@exemple.fr\",\r\n  \"address\": \"10 rue Paradis\",\r\n  \"user\": \"/api/users/33\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contacts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT CONTACT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NTc4ODYsImV4cCI6MTU5Nzc2MTQ4Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.UnXNgen-FcsQMNkNK5EOhSTjn17yjMaoJJItgNp9wwr1wRAooO9V2P9uFRo8UBunS3NEkNJRHmgWq-pvV34GJ9nv5CH_9eCo5LWUdprDXt-Jb86TBpFoRSriui03XO8IgZQSJI2w5li1yWxdVFQ7OB_uG7Xav86Sb6MMl1oCl8ccoD00tKUTcEZNVa5bMEgV2IZL1IWO-jkw1d5ag-efibAMoGSDyKXCIn_DGZ3ljUs17NNTKFQHlA1YgIfYHE-AycWYbvuFLXFZxV68FdyBN2-4TR-E0Ct9KnwsoK8m27JFVXtr4tU673jlfJfeuDEbqy645a9kAd4R-EDmLflVPcc9YOWkdcWc2p8fqH5fYO-8liTJ6n2q3KldpcbZkNCIkvaePNpyCIiLn7hvQI4RbUjisK0dNHuxz1MhF2QTJWrS7gG30mSNlKUgQimTvH-VZTqZCs75j4isCypwqgF2vOExPLmHXTHL36rWPBUMpbb7y8XIwyRjBnL51XgAyVrwB8CX9eil1PWgwFBGP4hEB8NNNQE4f5gyLp3wp8LxW4CoGaqgyO-46M_Ik39VygP3OZAXcB3Z9A_-mKnNp8HNnDlgsUPFAzU7yS1tKJYASkqev3d5_BWozkmeA8kY2x0Sel4MM6OykDvQIUdIXkMPikBEreO64OryHSXut1WUdOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contacts/120",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts",
+						"120"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

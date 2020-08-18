@@ -26,7 +26,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  *          "denormalization_context"={"groups"={"contact:write"}}
  *      }
  * )
- * @todo security control
+ * @todo Inidividualice serialization groups by HTTP methods
+ * 
  */
 class Contact
 {
@@ -56,12 +57,16 @@ class Contact
      * @Groups({"contact:read", "contact:write"})
      * @Assert\NotNull(message="Please enter a phone number")
      * @Assert\Length(min=10, minMessage="The phone number must have 10 chars")
+     * @todo regex to frech format validation
      */
     private $phone;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @Groups({"contact:read", "contact:write"})
+     * @Assert\Email(
+     *     message = "The email '{{ value }}' is not a valid email."
+     * )
      */
     private $email;
 
