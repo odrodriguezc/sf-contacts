@@ -5,13 +5,27 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\Collection;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @UniqueEntity("email")
+ * @ApiResource(
+ *      collectionOperations={
+ *         "get"
+ *      },
+ *     itemOperations={
+ *          "get"
+ *      },
+ *      attributes={
+ *     "normalization_context"={"groups"={"user:read"}},
+ *     "denormalization_context"={"groups"={"user:write"}}
+ *      }
+ * )
  */
 class User implements UserInterface
 {
@@ -19,16 +33,19 @@ class User implements UserInterface
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"user:read","contact:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Groups({"user:read","contact:read"})
      */
     private $email;
 
     /**
      * @ORM\Column(type="json")
+     * @Groups({"user:read","contact:read"})
      */
     private $roles = [];
 
@@ -45,16 +62,19 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"user:read","contact:read"})
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"user:read","contact:read"})
      */
     private $lastName;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Groups({"user:read","contact:read"})
      */
     private $visibility;
 

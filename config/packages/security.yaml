@@ -42,7 +42,7 @@ security:
         login_path: admin_security_login
         check_path: admin_security_login
         failure_path: admin_security_login
-        default_target_path: directory_index
+        default_target_path: dashboard_index
       logout:
         path: admin_security_logout
 

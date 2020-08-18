@@ -95,6 +95,6 @@ class ContactsController extends AbstractController
         $em->remove($contact);
         $em->flush();
 
-        return $this->redirectToRoute('contact_index');
+        return $this->redirectToRoute('contacts_index');
     }
 }

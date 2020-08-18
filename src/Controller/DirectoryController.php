@@ -18,6 +18,7 @@ class DirectoryController extends AbstractController
 {
     /**
      * @Route("/directory", name="directory_index")
+     * @todo change dql to exclure the own directory
      */
     public function index(UserRepository $userRepository)
     {
@@ -40,6 +41,7 @@ class DirectoryController extends AbstractController
 
     /**
      * @Route("/directory/create", name="directory_create")
+     * @todo Eneable private / public choice for directories. Temporary auto set in privatemode
      */
     public function create(Request $request, EntityManagerInterface $em)
     {
@@ -50,6 +52,9 @@ class DirectoryController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             /** @var User */
             $user = $form->getData();
+
+            //set de directory in private
+            $user->setVisibility(false);
 
             $em->persist($user);
             $em->flush();
@@ -66,6 +71,7 @@ class DirectoryController extends AbstractController
 
     /**
      * @Route("/directory/{id<\d+>}/edit", name="directory_edit")
+     * 
      */
     public function edit(User $user, Request $request, EntityManagerInterface $em)
     {
@@ -88,6 +94,7 @@ class DirectoryController extends AbstractController
 
     /**
      * @Route("/directory/{id<\d+>}/delete", name="directory_delete")
+     * @todo make form to delete directory
      */
     public function delete(User $user, EntityManagerInterface $em)
     {

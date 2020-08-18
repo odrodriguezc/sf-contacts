@@ -6,11 +6,21 @@ use Doctrine\ORM\Mapping as ORM;
 use App\Repository\ContactRepository;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ContactRepository::class)
  * @ORM\HasLifecycleCallbacks()
  * @ApiResource( 
+ *      collectionOperations={
+ *         "get",
+ *          "post" = {"security_post_denormalize" = "is_granted('CONTACT_CREATE', object)"}
+ *      },
+ *     itemOperations={
+ *         "get"={"security" = "is_granted('CONTACT_READ', object)"},
+ *          "put"={"security" = "is_granted('CONTACT_EDIT', object)"},
+ *          "delete"={"security" = "is_granted('CONTACT_DELETE', object)"},
+ *     },
  *      attributes={
  *          "normalization_context"={"groups"={"contact:read"}},
  *          "denormalization_context"={"groups"={"contact:write"}}
@@ -44,6 +54,8 @@ class Contact
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"contact:read", "contact:write"})
+     * @Assert\NotNull(message="Please enter a phone number")
+     * @Assert\Length(min=10, minMessage="The phone number must have 10 chars")
      */
     private $phone;
 
@@ -68,6 +80,7 @@ class Contact
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="contacts")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups({"contact:read", "contact:write"})
      */
     private $user;
 
