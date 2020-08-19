@@ -58,6 +58,14 @@ Réponse :
 
 Renvoie le JSON du contact, correspond à l&#39;id saisi, seulement si celui-ci est dans l&#39;annuaire de l&#39;utilisateur connecté, en cas contraire l&#39;accès est interdit.
 
+##### GET Recherche par phone
+
+…/api/contacts?phone=03 25
+
+##### GET Recherche par lastName
+
+…/api/contacts?lastName=Rui
+
 ##### POST
 
 /api/contacts

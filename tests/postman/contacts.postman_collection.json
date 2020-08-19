@@ -24,7 +24,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NTUyNDUsImV4cCI6MTU5Nzc1ODg0NSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.kG9HXpU-dH3aFb5QKnK-Jq8p1P1rQqR2aoD4-48kTEmjnuqjAN17XTP6SBiIQvM3kKxCnsocZebX5PnwibR0dzdZ2ScXvEP8FhwAjvSyWop9WPV3p5ldovbDCVF0OeuYrrCPhW7vTnHexL_SvtxT36bc9mEczj1rKX0Y1Z_2ZMH0_v-C4uIU2jTR01ihjegbV8yqLsIJYJBtTnIXJH7Mqu1pboGbGsDLcHR3Mrj6TqssMCJOXRKe_-fpMoe6QEEoMB0huKgfhNCQPSJ3hqCqgHoLShbR9i3AnRE-4N7KDL1VwiFa6XnVrWL7S5tf2tjbVzndtBeX8poaIFOYkUSYbPYGnXIseZV4sKu0LPZb9c1oPFYr48LglBzzp2kvjzeh5DzoJvcoCLQIZjcecknrgfcBPMVr4D3nVZYJQ_boHjFOzrMiTnVwkzdKGFbTo7ZZxtCfbladZZ532882J0N3wMONoUhHukb6ObcfZNHr0ZgfavjZJxsf2zgfiqh1MrhdmhlL4unrBJJRGNPJtXYTtQPoi2cWOeJNN1PMQjXzfxYiOVvnhycz3kWfOieLlf4qgG9gotEW8w6ZyL97IaJ4jZLYInEQqouKZDUpDsDQo64LbwC6mvvCL7BmRN4g0Zzb8W3i7v5an7S2cVp7GDwuGv4gBdyxtUzEPG671wliTtE",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc4MzEwNzYsImV4cCI6MTU5NzgzNDY3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.lPqJoKgTOAb-BNPYW6MOUu3qmkzfLHegdoGCyY6sZT6dKbOP7JPoi7mlcn-rA1EgLm3_QKVll_dO26oGknuVr-pNa9cbf5e_ZWvXIJCLPvnPwGkvfspS2VitYzf_4D1DliPV2rudbgVxE23_JL7Zos99d-RiwBUCy1NafVdfOjiRbyHP0jXmHPT9eiL8YngaC2Dw673j6pCCDeHaHv7eVFtLxtYURdRFOhh6MKFwNlsq2qDB0wQClkfJBMlWfiGwYllyGrqJyJZpyLpo2iNDwfy3_jnZXHScfu-GD6sITjIpaVMF710mplF0wGkkidVk9n7o4aNQvJlhNR91NFe8E69KMt68Lzvf5opH3vVpyZnmZaACXpT9cl1Bt-1R-TM0rghaChyf_QzWEdzQLx4BhScVuC8PlccnfDbIyrIWiITlm__ZFVHyIt_KvewNUiwTFdXyXVgDjW1TYzkpfYBRaCk8VAi8DoivbsQ_mMlPW4Wae0YgLLodULuLiN22Pf0cbbYRI28FChn-FSsxqeYL0vdzLL6bDhaYW_x_DG2SmghdcNKKjeZaPiOnhbSM5vzPHEVlvpUb9BsSlzi9QSybWVwoiHijYpKXooZXgSDcVHfhS4XpuN4Qigpx6Oec3Ix_nX9b7bfWLZoilhdeUGdDs4Zw_1uiNMsO7z9AmJGyBO4",
 							"type": "string"
 						}
 					]
@@ -52,10 +52,33 @@
 		{
 			"name": "contact item",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc4MzEwNzYsImV4cCI6MTU5NzgzNDY3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.lPqJoKgTOAb-BNPYW6MOUu3qmkzfLHegdoGCyY6sZT6dKbOP7JPoi7mlcn-rA1EgLm3_QKVll_dO26oGknuVr-pNa9cbf5e_ZWvXIJCLPvnPwGkvfspS2VitYzf_4D1DliPV2rudbgVxE23_JL7Zos99d-RiwBUCy1NafVdfOjiRbyHP0jXmHPT9eiL8YngaC2Dw673j6pCCDeHaHv7eVFtLxtYURdRFOhh6MKFwNlsq2qDB0wQClkfJBMlWfiGwYllyGrqJyJZpyLpo2iNDwfy3_jnZXHScfu-GD6sITjIpaVMF710mplF0wGkkidVk9n7o4aNQvJlhNR91NFe8E69KMt68Lzvf5opH3vVpyZnmZaACXpT9cl1Bt-1R-TM0rghaChyf_QzWEdzQLx4BhScVuC8PlccnfDbIyrIWiITlm__ZFVHyIt_KvewNUiwTFdXyXVgDjW1TYzkpfYBRaCk8VAi8DoivbsQ_mMlPW4Wae0YgLLodULuLiN22Pf0cbbYRI28FChn-FSsxqeYL0vdzLL6bDhaYW_x_DG2SmghdcNKKjeZaPiOnhbSM5vzPHEVlvpUb9BsSlzi9QSybWVwoiHijYpKXooZXgSDcVHfhS4XpuN4Qigpx6Oec3Ix_nX9b7bfWLZoilhdeUGdDs4Zw_1uiNMsO7z9AmJGyBO4",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://127.0.0.1:8000/api/contacts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts",
+						"1"
+					]
 				}
 			},
 			"response": []
@@ -68,7 +91,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NTc4ODYsImV4cCI6MTU5Nzc2MTQ4Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.UnXNgen-FcsQMNkNK5EOhSTjn17yjMaoJJItgNp9wwr1wRAooO9V2P9uFRo8UBunS3NEkNJRHmgWq-pvV34GJ9nv5CH_9eCo5LWUdprDXt-Jb86TBpFoRSriui03XO8IgZQSJI2w5li1yWxdVFQ7OB_uG7Xav86Sb6MMl1oCl8ccoD00tKUTcEZNVa5bMEgV2IZL1IWO-jkw1d5ag-efibAMoGSDyKXCIn_DGZ3ljUs17NNTKFQHlA1YgIfYHE-AycWYbvuFLXFZxV68FdyBN2-4TR-E0Ct9KnwsoK8m27JFVXtr4tU673jlfJfeuDEbqy645a9kAd4R-EDmLflVPcc9YOWkdcWc2p8fqH5fYO-8liTJ6n2q3KldpcbZkNCIkvaePNpyCIiLn7hvQI4RbUjisK0dNHuxz1MhF2QTJWrS7gG30mSNlKUgQimTvH-VZTqZCs75j4isCypwqgF2vOExPLmHXTHL36rWPBUMpbb7y8XIwyRjBnL51XgAyVrwB8CX9eil1PWgwFBGP4hEB8NNNQE4f5gyLp3wp8LxW4CoGaqgyO-46M_Ik39VygP3OZAXcB3Z9A_-mKnNp8HNnDlgsUPFAzU7yS1tKJYASkqev3d5_BWozkmeA8kY2x0Sel4MM6OykDvQIUdIXkMPikBEreO64OryHSXut1WUdOY",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc3NjE2MjYsImV4cCI6MTU5Nzc2NTIyNiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.SQ-6G-7ZDY-nms6nQSs8xQyeDv--NQezNN1X8NogB8XfIrucGKsupqNfnfTxqVZ8n0gmEy36gtXjR4xV4JEzUdYOnWvS4QyA8-mIYVe762iZxTkZWXLv-nXBIpxtgcWvCrngLYd1ZIkcn--rlWPQN7yqjAj8-VfO19r87Sifa5waWtRlaUM0ZnoyaE-i27602utajiMp3Chrq2RwQCYpxHCSQvCYFliyHk_-iwQJNy2PaHbsxIr8r68uCJ-pMRD-08MM46S_Fm6nZ0Vk5oeoofpvjexTlpKmWxqFGG4rtt7w68kGI4mXSCVbO80iJ_iLp2yB1Q4ub31nVGhZhJzviFjKRTVncafYVS9bRO_BRoHJ8y0euTDslTtOx7ee72gB-UqId3hySQ6w9HqJfMQMRi5KBprjqM026TnvkQfmm1OQN_20l8zoVTdRQzYTdWKBK5zb_HUJdVmBBF-Ys4WhWa4y_cVadqzC6rnk122QRbU8CTzFlN7Dr74-Z3sz_nyiJQQ2fA7BN0Nv-ZR4vpFRUanryirNaxmYde_twgT_OWYV6lgPHzeXx3XvXnYgJEcXIkNBP5oG8yq-Q0k2D9rk1yQpyw72OdEMYGveoO8sgi2rYUPM7zmxb_fYC4d2CPjo_51Fxj-280lTY9suxwRHHviRGVtPlS2jzp4FA2tDArI",
 							"type": "string"
 						}
 					]
@@ -76,7 +99,20 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://127.0.0.1:8000/api/contacts/119",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts",
+						"119"
+					]
 				}
 			},
 			"response": []
@@ -138,8 +174,17 @@
 				},
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Modified\",\r\n  \"lastName\": \"Dinamita\",\r\n  \"phone\": \"12345678910\",\r\n  \"email\": \"email@exemple.fr\",\r\n  \"address\": \"10 rue Paradis\",\r\n  \"user\": \"/api/users/34\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/contacts/120",
+					"raw": "http://127.0.0.1:8000/api/contacts/115",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -151,7 +196,85 @@
 					"path": [
 						"api",
 						"contacts",
-						"120"
+						"115"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by lastName",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc4MzEwNzYsImV4cCI6MTU5NzgzNDY3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.lPqJoKgTOAb-BNPYW6MOUu3qmkzfLHegdoGCyY6sZT6dKbOP7JPoi7mlcn-rA1EgLm3_QKVll_dO26oGknuVr-pNa9cbf5e_ZWvXIJCLPvnPwGkvfspS2VitYzf_4D1DliPV2rudbgVxE23_JL7Zos99d-RiwBUCy1NafVdfOjiRbyHP0jXmHPT9eiL8YngaC2Dw673j6pCCDeHaHv7eVFtLxtYURdRFOhh6MKFwNlsq2qDB0wQClkfJBMlWfiGwYllyGrqJyJZpyLpo2iNDwfy3_jnZXHScfu-GD6sITjIpaVMF710mplF0wGkkidVk9n7o4aNQvJlhNR91NFe8E69KMt68Lzvf5opH3vVpyZnmZaACXpT9cl1Bt-1R-TM0rghaChyf_QzWEdzQLx4BhScVuC8PlccnfDbIyrIWiITlm__ZFVHyIt_KvewNUiwTFdXyXVgDjW1TYzkpfYBRaCk8VAi8DoivbsQ_mMlPW4Wae0YgLLodULuLiN22Pf0cbbYRI28FChn-FSsxqeYL0vdzLL6bDhaYW_x_DG2SmghdcNKKjeZaPiOnhbSM5vzPHEVlvpUb9BsSlzi9QSybWVwoiHijYpKXooZXgSDcVHfhS4XpuN4Qigpx6Oec3Ix_nX9b7bfWLZoilhdeUGdDs4Zw_1uiNMsO7z9AmJGyBO4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contacts?lastName=Rui",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "lastName",
+							"value": "Rui"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by phone",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1OTc4MzEwNzYsImV4cCI6MTU5NzgzNDY3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlcjFAZXhlbXBsZS5mciJ9.lPqJoKgTOAb-BNPYW6MOUu3qmkzfLHegdoGCyY6sZT6dKbOP7JPoi7mlcn-rA1EgLm3_QKVll_dO26oGknuVr-pNa9cbf5e_ZWvXIJCLPvnPwGkvfspS2VitYzf_4D1DliPV2rudbgVxE23_JL7Zos99d-RiwBUCy1NafVdfOjiRbyHP0jXmHPT9eiL8YngaC2Dw673j6pCCDeHaHv7eVFtLxtYURdRFOhh6MKFwNlsq2qDB0wQClkfJBMlWfiGwYllyGrqJyJZpyLpo2iNDwfy3_jnZXHScfu-GD6sITjIpaVMF710mplF0wGkkidVk9n7o4aNQvJlhNR91NFe8E69KMt68Lzvf5opH3vVpyZnmZaACXpT9cl1Bt-1R-TM0rghaChyf_QzWEdzQLx4BhScVuC8PlccnfDbIyrIWiITlm__ZFVHyIt_KvewNUiwTFdXyXVgDjW1TYzkpfYBRaCk8VAi8DoivbsQ_mMlPW4Wae0YgLLodULuLiN22Pf0cbbYRI28FChn-FSsxqeYL0vdzLL6bDhaYW_x_DG2SmghdcNKKjeZaPiOnhbSM5vzPHEVlvpUb9BsSlzi9QSybWVwoiHijYpKXooZXgSDcVHfhS4XpuN4Qigpx6Oec3Ix_nX9b7bfWLZoilhdeUGdDs4Zw_1uiNMsO7z9AmJGyBO4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contacts?phone=03 25",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "03 25"
+						}
 					]
 				}
 			},
