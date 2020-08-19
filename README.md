@@ -4,7 +4,7 @@ Annuaire inversé ++
 
 ## Description
 
-Contacts est une tout petite application web qui offre un système de stockage et gestion des annuaires. A l&#39;intérieur de chaque &#39;un de ces annuaires la recherché des contacts peut se faire en tenant compte aussi bien du numéro téléphonique que du nom (prénom et/ou nom de famille) du contact.
+Contacts est une tout petite application web qui offre un système de stockage et gestion de contacts dans un annuaire lié à un utilisateur. A l&#39;intérieur d&#39;un annuaire la recherche de contacts peut se faire en tenant compte aussi bien du numéro téléphonique que du nom (prénom et/ou nom de famille) du contact, comme dans un annuaire inversé.
 
 ## L&#39;application
 
@@ -56,7 +56,7 @@ JSON avec les contacts de l&#39;annuaire de l&#39;utilisateur connecté.
 
 Réponse :
 
-Renvoie le JSON du contact corresponds à l&#39;id saisi, seulement si celui-ci est dans l&#39;annuaire de l&#39;utilisateur connecté, en cas contraire l&#39;accès est interdit.
+Renvoie le JSON du contact, correspond à l&#39;id saisi, seulement si celui-ci est dans l&#39;annuaire de l&#39;utilisateur connecté, en cas contraire l&#39;accès est interdit.
 
 ##### POST
 
@@ -80,7 +80,7 @@ Avec le BODY
 
 }
 
-Cree un nouveau contact dans l&#39;annuaire.
+Crée un nouveau contact dans l&#39;annuaire.
 
 ##### PUT
 
@@ -106,7 +106,7 @@ Sécurité gestionné par VOTER
 
 ##### Gestions des contacts dans un annuaire personnel
 
-Ensemble d&#39;opérations CRUD sur les contacts et sur les annuaires qui sont une propriété des utilisateurs. Le backoffice est limité aux utilisateurs ayant le rôle d&#39;administrateurs.
+Ensemble d&#39;opérations CRUD sur les contacts et sur les annuaires qui sont une propriété des utilisateurs. Le backoffice est limité aux utilisateurs ayant le rôle d&#39;administrateur.
 
 ##### Login
 
@@ -114,7 +114,7 @@ Un système de sécurité par _path_ gère l&#39;accès aux routes de l&#39;admi
 
 ###### Rôles
 
-Les utilisateurs peuvent être &#39;ROLE_USER&#39; ou &#39;ROLE_ADMIN&#39;. L&#39;administrateur peut exécuter l&#39;ensemble d&#39;opérations CRUD aussi bien sur les utilisateurs que sur les annuaires.
+Les utilisateurs peuvent avoir le rôle &#39;ROLE_USER&#39; ou &#39;ROLE_ADMIN&#39;. L&#39;administrateur peut exécuter l&#39;ensemble d&#39;opérations CRUD aussi bien sur les utilisateurs que sur les annuaires.
 
 ###### Pages
 
@@ -124,11 +124,11 @@ Offre un message de bienvenue et un formulaire de recherche (inversé) dans l&#3
 
 _MyContacts_
 
-Liste des contacts de l&#39;utilisateur connecté avec les liens vers les _show_, _edit_ et la suppression directe.
+Liste des contacts de l&#39;utilisateur connecté avec les liens vers le _show_, l*edit* et la suppression directe.
 
 _Directories_
 
-Liste des annuaires disponibles en basse de donnés avec les liens vers _les show, edit_ et la suppression directe.
+Liste des annuaires disponibles en basse de donnés avec les liens vers _le show,_ l&#39;_edit_ et la suppression directe.
 
 Une barre de navigation permet de se déplacer entre les différentes pages ainsi que se déconnecter.
 
@@ -136,7 +136,7 @@ _Create / edit_
 
 Chaque entité (User et Contact) dispose d&#39;une page avec un formulaire de création et une autre page avec un formulaire d&#39;édition.
 
-Quelques valeurs comme la date de création son introduit automatiquement par l&#39;application. C&#39;est aussi le cas pour le password d&#39;un nouvel utilisateur.
+Quelques valeurs comme la date de création sont introduites automatiquement par l&#39;application. C&#39;est aussi le cas pour le password d&#39;un nouvel utilisateur.
 
 #### Choix Techniques
 
@@ -146,7 +146,7 @@ Symfony 5 et Bootstrap 4
 
 Développement d&#39;une application front (Angular / Vue).
 
-Délier les annuaires les utilisateurs dans une entité indépendante
+Délier les annuaires des utilisateurs dans une entité indépendante
 
 Multiples annuaires par utilisateurs
 
